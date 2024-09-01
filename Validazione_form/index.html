@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/css/index.css" />
+    <script src="./src/js/index.js" defer></script>
+  </head>
+  <body>
+    <form
+      action="login.php"
+      method="post"
+      autocomplete="off"
+      name="login"
+      id="login"
+    >
+      <h3>Entra nella tua area riservata</h3>
+
+      <div>
+        <!-- <label for="user">User</label> -->
+        <input
+          type="text"
+          id="user"
+          name="user"
+          placeholder="La tua email"
+          autofocus
+          data-pattern="email"
+        />
+
+        <span></span>
+      </div>
+
+      <div>
+        <input
+          type="password"
+          name="pass"
+          id="pass"
+          placeholder="La tua password"
+          data-pattern="password"
+        />
+        <span></span>
+      </div>
+
+      <!--  <input type="submit" value=""> -->
+      <button type="submit">Entra</button>
+      <!--  <button type="reset">Reset</button> -->
+    </form>
+  </body>
+</html>
+
+<!-- campo1=valore1&campo2=valore2 -->

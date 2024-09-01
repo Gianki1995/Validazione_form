@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #ddd;
+}
+
+#login {
+  max-width: 500px;
+  padding: 30px;
+  background-color: #fff;
+  margin: 5% auto;
+}
+
+#login h3 {
+  text-align: center;
+  margin: 0 0 20px;
+  color: green;
+  /*   text-transform: uppercase;
+ */
+  font-size: 1.4em;
+}
+
+#login > div {
+  margin-bottom: 25px;
+}
+
+#login input {
+  padding: 10px;
+  border: 2px solid #ddd;
+  outline: none;
+  font-size: 1.4em;
+  width: 100%;
+}
+
+#login button {
+  font-size: 1.4em;
+  padding: 10px;
+  border: 2px solid green;
+  color: green;
+  cursor: pointer;
+  width: 50%;
+  margin-left: 25%;
+  background-color: transparent;
+  transition: 0.5s;
+}
+
+#login button:hover {
+  background-color: green;
+  color: #fff;
+}
+
+#login .errore {
+  border-color: red;
+  background-color: rgb(255, 223, 223);
+}
+
+/* #login .errore:focus {
+  border-color: #ddd;
+  background-color: #fff;
+}
+
+#login .errore:focus + span {
+  display: none;
+} */
+
+#login span {
+  display: none;
+  margin-top: 5px;
+  color: red;
+}
+
+#login .errore + span {
+  display: block;
+}
